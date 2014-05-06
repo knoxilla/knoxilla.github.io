@@ -5,21 +5,21 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Your Blog</title>
- <link href="http://yourwebsiteurl.com/blog/atom.xml" rel="self"/>
- <link href="http://yourwebsiteurl.com/blog"/>
+ <link href="http://knoxilla.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://knoxilla.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://yourwebsiteurl.com/blog</id>
+ <id>http://knoxilla.github.io/blog</id>
  <author>
-   <name>Your Name</name>
-   <email>youremailaddress@email.com</email>
+   <name>Knoxilla</name>
+   <email>nobody@example.com</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://yourwebsiteurl.com{{ post.url }}"/>
+   <link href="http://knoxilla.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://yourwebsiteurl.com/{{ post.id }}</id>
+   <id>http://knoxilla.github.io/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
