@@ -7,3 +7,5 @@ Get it all down from this guy:
 
 * http://jmcglone.com/guides/github-pages 
 * jmcglone@umich.edu
+
+Also try this tutorial a [try.github.io](thttps://try.github.io/levels/1/challenges/1)
